@@ -43,7 +43,7 @@ def update(request, task_id):
         task.save()
         return redirect(detail, task_id)
 
-context = {
-'task': task
-}
-return render(request, "todo/edit.html", context)
+    context = {
+        'task': task
+    }
+    return render(request, "todo/edit.html", context)
