@@ -78,3 +78,57 @@ form input:focus {
 .sort-links a + a {
     margin-left: 0.8rem;
 }
+
+.tasks {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+
+@media (min-width:600px){
+    .tasks {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+}
+
+.task-card {
+    background: #fff;
+    padding: 1rem 1.2rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s, transform 0.1s;
+}
+
+.task-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+.task-card h2 {
+    margin: 0 0 0.6rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.task-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-card li {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+}
+
+.task-card .status-completed {
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+.task-card .status-pending {
+    color: #c62828;
+    font-weight: 500;
+}
