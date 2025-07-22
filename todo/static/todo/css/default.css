@@ -69,3 +69,12 @@ form input:focus {
     border-color: #0087d1;
     outline: none;
 }
+
+.sort-links {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.sort-links a + a {
+    margin-left: 0.8rem;
+}
